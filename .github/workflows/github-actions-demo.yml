@@ -1,8 +1,9 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
-env:
-  PROJECT_PATH: /react-map-gl-map-styles
+defaults:
+  run:
+    working-directory: react-map-gl-map-styles
 jobs:
   Explore-GitHub-Actions:
     runs-on: windows-latest
